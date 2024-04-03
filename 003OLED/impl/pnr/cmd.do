@@ -1,8 +1,8 @@
--d C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\gwsynthesis\9K_LED_project.vg
+-d C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\gwsynthesis\9K_LED_project.vg
 -p GW1NR-9C-QFN88P-6
 -pn GW1NR-LV9QN88PC6/I5
--cst C:\Workspace\NES\NESTang\LushayLabs\003OLED\src\screen.cst
--cfg C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\pnr\device.cfg
+-cst C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\src\screen.cst
+-cfg C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\pnr\device.cfg
 -bit
 -tr
 -ph

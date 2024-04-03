@@ -1,9 +1,9 @@
 [
  {
-  "InstFile" : "C:/Workspace/NES/NESTang/LushayLabs/003OLED/src/screen.v",
+  "InstFile" : "C:/Workspace/NES/NESTang/TangNano9k_LushayLabs/003OLED/src/screen.v",
   "InstLine" : 1,
   "InstName" : "screen",
-  "ModuleFile" : "C:/Workspace/NES/NESTang/LushayLabs/003OLED/src/screen.v",
+  "ModuleFile" : "C:/Workspace/NES/NESTang/TangNano9k_LushayLabs/003OLED/src/screen.v",
   "ModuleLine" : 1,
   "ModuleName" : "screen"
  }

@@ -2,7 +2,7 @@
  "Device" : "GW1NR-9C",
  "Files" : [
   {
-   "Path" : "C:/Workspace/NES/NESTang/LushayLabs/003OLED/src/screen.v",
+   "Path" : "C:/Workspace/NES/NESTang/TangNano9k_LushayLabs/003OLED/src/screen.v",
    "Type" : "verilog"
   }
  ],
@@ -10,7 +10,7 @@
 
  ],
  "LoopLimit" : 2000,
- "ResultFile" : "C:/Workspace/NES/NESTang/LushayLabs/003OLED/impl/temp/rtl_parser.result",
+ "ResultFile" : "C:/Workspace/NES/NESTang/TangNano9k_LushayLabs/003OLED/impl/temp/rtl_parser.result",
  "Top" : "",
  "VerilogStd" : "verilog_2001",
  "VhdlStd" : "vhdl_93"

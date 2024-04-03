@@ -1,7 +1,7 @@
-Reading netlist file: "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\gwsynthesis\9K_LED_project.vg"
-Parsing netlist file "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\gwsynthesis\9K_LED_project.vg" completed
+Reading netlist file: "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\gwsynthesis\9K_LED_project.vg"
+Parsing netlist file "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\gwsynthesis\9K_LED_project.vg" completed
 Processing netlist completed
-Reading constraint file: "C:\Workspace\NES\NESTang\LushayLabs\003OLED\src\screen.cst"
+Reading constraint file: "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\src\screen.cst"
 Physical Constraint parsed completed
 Running placement......
 [10%] Placement Phase 0 completed
@@ -20,10 +20,10 @@ Bitstream generation in progress......
 Bitstream generation completed
 Running power analysis......
 [100%] Power analysis completed
-Generate file "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\pnr\9K_LED_project.power.html" completed
-Generate file "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\pnr\9K_LED_project.pin.html" completed
-Generate file "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\pnr\9K_LED_project.rpt.html" completed
-Generate file "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\pnr\9K_LED_project.rpt.txt" completed
-Generate file "C:\Workspace\NES\NESTang\LushayLabs\003OLED\impl\pnr\9K_LED_project.tr.html" completed
-Wed Apr  3 16:03:50 2024
+Generate file "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\pnr\9K_LED_project.power.html" completed
+Generate file "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\pnr\9K_LED_project.pin.html" completed
+Generate file "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\pnr\9K_LED_project.rpt.html" completed
+Generate file "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\pnr\9K_LED_project.rpt.txt" completed
+Generate file "C:\Workspace\NES\NESTang\TangNano9k_LushayLabs\003OLED\impl\pnr\9K_LED_project.tr.html" completed
+Wed Apr  3 16:44:51 2024
 
