@@ -1,0 +1,3857 @@
+{
+  "creator": "Next Generation Place and Route (Version nextpnr-0.6-140-g55635cf2)",
+  "modules": {
+    "top": {
+      "settings": {
+        "route": "00000000000000000000000000000001",
+        "router/tmg_ripup": "0 ",
+        "router1/useEstimate": "1 ",
+        "router1/fullCleanupReroute": "1 ",
+        "router1/cleanupReroute": "1 ",
+        "router1/maxIterCnt": "200",
+        "place": "00000000000000000000000000000001",
+        "placer1/startTemp": "1.000000",
+        "placer1/minBelsForGridPick": "64",
+        "placer1/netShareWeight": "0.000000",
+        "placer1/constraintWeight": "10.000000",
+        "placerHeap/cellPlacementTimeout": "8",
+        "placerHeap/netShareWeight": "0.000000",
+        "placerHeap/parallelRefine": "0 ",
+        "pack": "00000000000000000000000000000001",
+        "cst": "00000000000000000000000000000001",
+        "synth": "00000000000000000000000000000001",
+        "placerHeap/timingWeight": "10 ",
+        "placerHeap/criticalityExponent": "2",
+        "placerHeap/beta": "0.900000",
+        "placerHeap/alpha": "0.100000",
+        "seed": "01010011010110001001011110010011",
+        "arch.type": "none",
+        "arch.name": "ARCHNAME",
+        "router": "router1",
+        "placer": "heap",
+        "auto_freq": "00000000000000000000000000000000",
+        "slack_redist_iter": "00000000000000000000000000000000",
+        "timing_driven": "00000000000000000000000000000001",
+        "target_freq": "27000000.000000",
+        "arch.enable-auto-longwires": "00000000000000000000000000000000",
+        "arch.enable-globals": "00000000000000000000000000000001"
+      },
+      "attributes": {
+        "top": "00000000000000000000000000000001",
+        "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:3.1-22.10"
+      },
+      "ports": {
+        "led": {
+          "direction": "output",
+          "bits": [ 290222, 290228, 290229, 1127297618, 119942, 283453 ]
+        },
+        "clk": {
+          "direction": "input",
+          "bits": [ 3878228 ]
+        }
+      },
+      "cells": {
+        "clockCounter_DFFR_Q_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C11_SLICE3",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878236 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878235 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C10_SLICE4",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878241 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878240 ]
+          }
+        },
+        "clockCounter_DFFR_Q_10_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C9_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878245 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878243 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C9_SLICE5",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878254 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878252 ]
+          }
+        },
+        "clockCounter_DFFR_Q_12_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C9_SLICE5",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878259 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878258 ]
+          }
+        },
+        "clockCounter_DFFR_Q_13_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C8_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878264 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878263 ]
+          }
+        },
+        "clockCounter_DFFR_Q_14_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C8_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878269 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878268 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C8_SLICE0",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878274 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878273 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C8_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878280 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878278 ]
+          }
+        },
+        "clockCounter_DFFR_Q_17_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C8_SLICE5",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878286 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878284 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C8_SLICE4",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878292 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878290 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFE",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R21C2_SLICE3",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:19.7-19.56"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [ 3878237 ],
+            "Q": [ 3878389 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878388 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C6_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878298 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878296 ]
+          }
+        },
+        "clockCounter_DFFR_Q_2_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C10_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878306 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878305 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C7_SLICE3",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878309 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878308 ]
+          }
+        },
+        "ledCounter_DFFE_Q_3_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFE",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R21C2_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:19.7-19.56"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [ 3878237 ],
+            "Q": [ 3878384 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878383 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C7_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878314 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878313 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C7_SLICE0",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878319 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878318 ]
+          }
+        },
+        "ledCounter_DFFE_Q_2_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFE",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R21C2_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:19.7-19.56"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [ 3878237 ],
+            "Q": [ 3878379 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878378 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C10_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878332 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878331 ]
+          }
+        },
+        "clockCounter_DFFR_Q_4_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C10_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878337 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878336 ]
+          }
+        },
+        "clockCounter_DFFR_Q_5_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C10_SLICE4",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878342 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878341 ]
+          }
+        },
+        "clockCounter_DFFR_Q_6_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C10_SLICE0",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878347 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878346 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C9_SLICE0",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878352 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878351 ]
+          }
+        },
+        "clockCounter_DFFR_Q_8_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C9_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878358 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878356 ]
+          }
+        },
+        "clockCounter_DFFR_Q_9_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C9_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:31.7-31.59"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878364 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878362 ]
+          }
+        },
+        "ledCounter_DFFE_Q_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFE",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C3_SLICE5",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:19.7-19.56"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [ 3878237 ],
+            "Q": [ 3878370 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878369 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1_DFFLC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFE",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "1010101010101010"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R21C2_SLICE5",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:13.1-19.4|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:19.7-19.56"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [ 3878237 ],
+            "Q": [ 3878373 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878372 ]
+          }
+        },
+        "clockCounter_DFFR_Q_20_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C7_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878308 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878309 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_21_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C7_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878313 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878314 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C7_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878318 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878319 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C7_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878324 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878323 ],
+            "A": [ 3878451 ]
+          }
+        },
+        "clockCounter_DFFR_Q_19_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C7_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878296 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878298 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_18_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878290 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878292 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "led_OBUF_O_5$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_I": "NET",
+            "NET_GW9C_ALWAYS_LOW0": "GND",
+            "NET_GW9C_ALWAYS_LOW1": "GND",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R15C1_IOBA",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:6.18-6.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "GW9C_ALWAYS_LOW1": "input",
+            "GW9C_ALWAYS_LOW0": "input",
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "GW9C_ALWAYS_LOW1": [ 3878449 ],
+            "GW9C_ALWAYS_LOW0": [ 3878449 ],
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3878393 ],
+            "PAD": [  ]
+          }
+        },
+        "led_OBUF_O$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_I": "NET",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R26C1_IOBB",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:6.18-6.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3878370 ],
+            "PAD": [  ]
+          }
+        },
+        "clockCounter_DFFR_Q_17_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878284 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878286 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_2_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878305 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878306 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_16_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878278 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878280 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_1_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878240 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878241 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_15_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878273 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878274 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C11_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878235 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878236 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_14_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878268 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878269 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "C2L",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C11_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [  ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "clockCounter_DFFR_Q_13_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878263 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878264 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "C2L",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C7_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [  ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [ 3878451 ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "clockCounter_DFFR_Q_12_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878258 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878259 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C2_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878394 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878393 ],
+            "A": [ 3878451 ]
+          }
+        },
+        "clockCounter_DFFR_Q_11_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878252 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878254 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_MUX2_LUT53"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3878401 ],
+            "SEL": [ 3878408 ],
+            "I1": [ 3878407 ],
+            "I0": [ 3878406 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C2_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878388 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878389 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_3_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C2_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878383 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878384 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_LC": {
+          "hide_name": 0,
+          "type": "MUX2_LUT5",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_MUX2_LUT53"
+          },
+          "port_directions": {
+            "OF": "output",
+            "SEL": "input",
+            "I1": "input",
+            "I0": "input"
+          },
+          "connections": {
+            "OF": [ 3878402 ],
+            "SEL": [ 3878412 ],
+            "I1": [ 3878411 ],
+            "I0": [ 3878410 ]
+          }
+        },
+        "clockCounter_DFFR_Q_10_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878243 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878245 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_9_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878362 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878364 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "led_OBUF_O_1$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_I": "NET",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R25C1_IOBB",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:6.18-6.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3878373 ],
+            "PAD": [  ]
+          }
+        },
+        "clockCounter_DFFR_Q_8_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878356 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878358 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_7_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878351 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878352 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_6_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878346 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878347 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_5_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878341 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878342 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "$PACKER_GND": {
+          "hide_name": 1,
+          "type": "GND",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "GND"
+          },
+          "port_directions": {
+            "G": "output"
+          },
+          "connections": {
+            "G": [ 3878449 ]
+          }
+        },
+        "led_OBUF_O_2$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_I": "NET",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R22C1_IOBB",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:6.18-6.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3878379 ],
+            "PAD": [  ]
+          }
+        },
+        "clockCounter_DFFR_Q_4_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE2"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878336 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878337 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "clockCounter_DFFR_Q_3_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE3"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878331 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878332 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE6",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878410 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "led_OBUF_O_3$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_I": "NET",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R21C1_IOBB",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:6.18-6.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3878384 ],
+            "PAD": [  ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I1_LUT4_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "0000000001000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C8_SLICE7",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878411 ],
+            "CLK": [  ],
+            "D": [ 3878298 ],
+            "C": [ 3878292 ],
+            "B": [ 3878286 ],
+            "A": [ 3878280 ]
+          }
+        },
+        "led_OBUF_O_4$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_I": "NET",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000001",
+            "INPUT_USED": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R16C1_IOBB",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:6.18-6.21",
+            "&DRIVE=8": "00000000000000000000000000000001",
+            "&IO_TYPE=LVCMOS18": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [  ],
+            "OEN": [  ],
+            "I": [ 3878389 ],
+            "PAD": [  ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_S0_LUT4_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "0000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C7_SLICE5",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878412 ],
+            "CLK": [  ],
+            "D": [ 3878323 ],
+            "C": [ 3878319 ],
+            "B": [ 3878314 ],
+            "A": [ 3878309 ]
+          }
+        },
+        "ledCounter_DFFE_Q_1_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C2_SLICE5"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878372 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878373 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I0_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE6",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:152.41-152.66|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878406 ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "ledCounter_DFFE_Q_2_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C2_SLICE4"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878378 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878379 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I1_LUT4_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C9_SLICE7",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:153.41-153.66|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878407 ],
+            "CLK": [  ],
+            "D": [ 3878254 ],
+            "C": [ 3878245 ],
+            "B": [ 3878364 ],
+            "A": [ 3878358 ]
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "00000000000000000000000000000010",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C3_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878369 ],
+            "CLK": [  ],
+            "D": [ 3878451 ],
+            "C": [ 3878451 ],
+            "B": [ 3878370 ],
+            "A": [ 3878449 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_S0_LUT4_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "0000000010000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C8_SLICE7",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878408 ],
+            "CLK": [  ],
+            "D": [ 3878274 ],
+            "C": [ 3878269 ],
+            "B": [ 3878264 ],
+            "A": [ 3878259 ]
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_DUMMY_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "C2L",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C3_SLICE1"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [  ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "clockCounter_DFFR_Q_23_D_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFR",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R16C7_SLICE1",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [ 3878237 ],
+            "CE": [  ],
+            "Q": [ 3878323 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878323 ]
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_HEAD_ALULC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "ALU_MODE": "C2L",
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "00000000000000000000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R22C2_SLICE0"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [  ],
+            "CLK": [  ],
+            "D": [  ],
+            "C": [ 3878451 ],
+            "B": [  ],
+            "A": [  ]
+          }
+        },
+        "ledCounter_DFFE_Q_5_D_LUT1_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFFE",
+            "FF_USED": "00000000000000000000000000000001",
+            "INIT": "01"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C2_SLICE2",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:135.23-136.15"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [ 3878237 ],
+            "Q": [ 3878393 ],
+            "F": [  ],
+            "CLK": [ 3878232 ],
+            "D": [  ],
+            "C": [  ],
+            "B": [  ],
+            "A": [ 3878393 ]
+          }
+        },
+        "clk_IBUF_I$iob": {
+          "hide_name": 0,
+          "type": "IOB",
+          "parameters": {
+            "NET_O": "NET",
+            "ENABLE_USED": "00000000000000000000000000000000",
+            "OUTPUT_USED": "00000000000000000000000000000000",
+            "INPUT_USED": "00000000000000000000000000000001"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000110",
+            "NEXTPNR_BEL": "R17C47_IOBA",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:5.11-5.14",
+            "&IO_TYPE=LVCMOS33": "00000000000000000000000000000001",
+            "&PULL_MODE=UP": "00000000000000000000000000000001"
+          },
+          "port_directions": {
+            "O": "output",
+            "OEN": "input",
+            "I": "input",
+            "PAD": "inout"
+          },
+          "connections": {
+            "O": [ 3878232 ],
+            "OEN": [  ],
+            "I": [  ],
+            "PAD": [  ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "1000000000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE6",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878237 ],
+            "CLK": [  ],
+            "D": [ 3878402 ],
+            "C": [ 3878401 ],
+            "B": [ 3878400 ],
+            "A": [ 3878399 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_LUT4_F_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "0000100000000000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R18C10_SLICE7",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878399 ],
+            "CLK": [  ],
+            "D": [ 3878352 ],
+            "C": [ 3878347 ],
+            "B": [ 3878342 ],
+            "A": [ 3878337 ]
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_LUT4_F_1_LC": {
+          "hide_name": 0,
+          "type": "SLICE",
+          "parameters": {
+            "FF_TYPE": "DFF",
+            "FF_USED": "00000000000000000000000000000000",
+            "INIT": "0000000000001000"
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "R17C10_SLICE7",
+            "module_not_derived": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:147.23-148.48"
+          },
+          "port_directions": {
+            "LSR": "input",
+            "CE": "input",
+            "Q": "output",
+            "F": "output",
+            "CLK": "input",
+            "D": "input",
+            "C": "input",
+            "B": "input",
+            "A": "input"
+          },
+          "connections": {
+            "LSR": [  ],
+            "CE": [  ],
+            "Q": [  ],
+            "F": [ 3878400 ],
+            "CLK": [  ],
+            "D": [ 3878332 ],
+            "C": [ 3878306 ],
+            "B": [ 3878241 ],
+            "A": [ 3878236 ]
+          }
+        },
+        "$PACKER_VCC": {
+          "hide_name": 1,
+          "type": "VCC",
+          "parameters": {
+          },
+          "attributes": {
+            "BEL_STRENGTH": "00000000000000000000000000000001",
+            "NEXTPNR_BEL": "VCC"
+          },
+          "port_directions": {
+            "V": "output"
+          },
+          "connections": {
+            "V": [ 3878451 ]
+          }
+        }
+      },
+      "netnames": {
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I0": {
+          "hide_name": 0,
+          "bits": [ 3878410 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F6;;1;R17C8_I0MUX6;R17C8_F6_DUMMY_I0MUX6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_S0[4]": {
+          "hide_name": 0,
+          "bits": [ 3878408 ] ,
+          "attributes": {
+            "ROUTING": "R16C8_F7;;1;R16C8_EW20;R16C8_F7_EW20;1;R16C9_S26;R16C9_E121_S260;1;R17C9_X05;R17C9_S261_X05;1;R17C9_SEL6;R17C9_X05_SEL6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I1": {
+          "hide_name": 0,
+          "bits": [ 3878407 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F7;;1;R17C9_I1MUX6;R17C9_F7_DUMMY_I1MUX6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_I0": {
+          "hide_name": 0,
+          "bits": [ 3878406 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F6;;1;R17C9_I0MUX6;R17C9_F6_DUMMY_I0MUX6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.9-151.11"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[3]": {
+          "hide_name": 0,
+          "bits": [ 3878402 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_OF6;;1;R17C8_E13;R17C8_OF6_E130;1;R17C9_E27;R17C9_E131_E270;1;R17C10_N27;R17C10_E271_N270;1;R17C10_D6;R17C10_N270_D6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[2]": {
+          "hide_name": 0,
+          "bits": [ 3878401 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_OF6;;1;R17C9_E26;R17C9_OF6_E260;1;R17C10_C6;R17C10_E261_C6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[1]": {
+          "hide_name": 0,
+          "bits": [ 3878400 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F7;;1;R17C10_X08;R17C10_F7_X08;1;R17C10_B6;R17C10_X08_B6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0[0]": {
+          "hide_name": 0,
+          "bits": [ 3878399 ] ,
+          "attributes": {
+            "ROUTING": "R18C10_F7;;1;R18C10_SN20;R18C10_F7_SN20;1;R17C10_A6;R17C10_N121_A6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_I1": {
+          "hide_name": 0,
+          "bits": [ 3878411 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F7;;1;R17C8_I1MUX6;R17C8_F7_DUMMY_I1MUX6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:151.13-151.15"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 3878394 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "ledCounter[0]": {
+          "hide_name": 0,
+          "bits": [ 3878393 ] ,
+          "attributes": {
+            "ROUTING": "R18C2_S22;R18C2_Q2_S220;1;R20C2_S23;R20C2_S222_S230;1;R22C2_B1;R22C2_S232_B1;1;R18C2_EW20;R18C2_Q2_EW20;1;R18C1_N26;R18C1_W121_N260;1;R16C1_N27;R16C1_N262_N270;1;R15C1_A0;R15C1_N271_A0;1;R18C2_Q2;;1;R18C2_X05;R18C2_Q2_X05;1;R18C2_A2;R18C2_X05_A2;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:10.11-10.21"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 3878391 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:17.23-17.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[1]": {
+          "hide_name": 0,
+          "bits": [ 3878389 ] ,
+          "attributes": {
+            "ROUTING": "R21C2_N23;R21C2_Q3_N230;1;R19C2_N23;R19C2_N232_N230;1;R17C2_W23;R17C2_N232_W230;1;R17C1_N23;R17C1_E232_N230;1;R16C1_X08;R16C1_N231_X08;1;R16C1_D1;R16C1_X08_D1;1;R21C2_Q3;;1;R21C2_S23;R21C2_Q3_S230;1;R22C2_B2;R22C2_S231_B2;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:10.11-10.21"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 3878388 ] ,
+          "attributes": {
+            "ROUTING": "R22C2_F2;;1;R22C2_N22;R22C2_F2_N220;1;R21C2_X07;R21C2_N221_X07;1;R21C2_A3;R21C2_X07_A3;1"
+          }
+        },
+        "ledCounter_DFFE_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878386 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:17.23-17.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[2]": {
+          "hide_name": 0,
+          "bits": [ 3878384 ] ,
+          "attributes": {
+            "ROUTING": "R21C2_EW20;R21C2_Q2_EW20;1;R21C1_D1;R21C1_W121_D1;1;R21C2_Q2;;1;R21C2_SN10;R21C2_Q2_SN10;1;R22C2_B3;R22C2_S111_B3;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:10.11-10.21"
+          }
+        },
+        "ledCounter_DFFE_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 3878383 ] ,
+          "attributes": {
+            "ROUTING": "R22C2_F3;;1;R22C2_N23;R22C2_F3_N230;1;R21C2_X02;R21C2_N231_X02;1;R21C2_A2;R21C2_X02_A2;1"
+          }
+        },
+        "ledCounter_DFFE_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878381 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:17.23-17.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[3]": {
+          "hide_name": 0,
+          "bits": [ 3878379 ] ,
+          "attributes": {
+            "ROUTING": "R22C2_W26;R22C2_S121_W260;1;R22C1_X03;R22C1_W261_X03;1;R22C1_D1;R22C1_X03_D1;1;R21C2_Q1;;1;R21C2_SN20;R21C2_Q1_SN20;1;R22C2_B4;R22C2_S121_B4;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:10.11-10.21"
+          }
+        },
+        "ledCounter_DFFE_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 3878378 ] ,
+          "attributes": {
+            "ROUTING": "R22C2_F4;;1;R22C2_SN10;R22C2_F4_SN10;1;R21C2_A1;R21C2_N111_A1;1"
+          }
+        },
+        "ledCounter_DFFE_Q_1_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878376 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:17.23-17.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878375 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:17.23-17.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter[4]": {
+          "hide_name": 0,
+          "bits": [ 3878373 ] ,
+          "attributes": {
+            "ROUTING": "R23C2_S20;R23C2_S252_S200;1;R25C2_W20;R25C2_S202_W200;1;R25C1_D1;R25C1_W201_D1;1;R21C2_Q5;;1;R21C2_S25;R21C2_Q5_S250;1;R22C2_B5;R22C2_S251_B5;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:10.11-10.21"
+          }
+        },
+        "ledCounter_DFFE_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 3878372 ] ,
+          "attributes": {
+            "ROUTING": "R22C2_F5;;1;R22C2_SN20;R22C2_F5_SN20;1;R21C2_A5;R21C2_N121_A5;1"
+          }
+        },
+        "ledCounter[5]": {
+          "hide_name": 0,
+          "bits": [ 3878370 ] ,
+          "attributes": {
+            "ROUTING": "R22C3_S25;R22C3_Q5_S250;1;R24C3_W25;R24C3_S252_W250;1;R24C1_S25;R24C1_W252_S250;1;R26C1_X08;R26C1_S252_X08;1;R26C1_D1;R26C1_X08_D1;1;R22C3_Q5;;1;R22C3_X04;R22C3_Q5_X04;1;R22C3_B0;R22C3_X04_B0;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:10.11-10.21"
+          }
+        },
+        "ledCounter_DFFE_Q_D": {
+          "hide_name": 0,
+          "bits": [ 3878369 ] ,
+          "attributes": {
+            "ROUTING": "R22C3_F0;;1;R22C3_X05;R22C3_F0_X05;1;R22C3_A5;R22C3_X05_A5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878367 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[14]": {
+          "hide_name": 0,
+          "bits": [ 3878364 ] ,
+          "attributes": {
+            "ROUTING": "R18C9_SN10;R18C9_Q2_SN10;1;R17C9_N25;R17C9_N111_N250;1;R17C9_B7;R17C9_N250_B7;1;R18C9_Q2;;1;R18C9_N13;R18C9_Q2_N130;1;R17C9_B3;R17C9_N131_B3;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_9_D": {
+          "hide_name": 0,
+          "bits": [ 3878362 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F3;;1;R17C9_S13;R17C9_F3_S130;1;R18C9_A2;R18C9_S131_A2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_9_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878360 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[15]": {
+          "hide_name": 0,
+          "bits": [ 3878358 ] ,
+          "attributes": {
+            "ROUTING": "R16C9_S10;R16C9_Q1_S100;1;R17C9_A7;R17C9_S101_A7;1;R16C9_Q1;;1;R16C9_SN20;R16C9_Q1_SN20;1;R17C9_B4;R17C9_S121_B4;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_8_D": {
+          "hide_name": 0,
+          "bits": [ 3878356 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F4;;1;R17C9_SN10;R17C9_F4_SN10;1;R16C9_A1;R16C9_N111_A1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_8_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878354 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[16]": {
+          "hide_name": 0,
+          "bits": [ 3878352 ] ,
+          "attributes": {
+            "ROUTING": "R18C9_E10;R18C9_Q0_E100;1;R18C10_D7;R18C10_E101_D7;1;R18C9_Q0;;1;R18C9_N10;R18C9_Q0_N100;1;R17C9_B5;R17C9_N101_B5;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_7_D": {
+          "hide_name": 0,
+          "bits": [ 3878351 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F5;;1;R17C9_S25;R17C9_F5_S250;1;R18C9_A0;R18C9_S251_A0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_7_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878349 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[17]": {
+          "hide_name": 0,
+          "bits": [ 3878347 ] ,
+          "attributes": {
+            "ROUTING": "R18C10_X05;R18C10_Q0_X05;1;R18C10_C7;R18C10_X05_C7;1;R18C10_Q0;;1;R18C10_N20;R18C10_Q0_N200;1;R17C10_X07;R17C10_N201_X07;1;R17C10_B0;R17C10_X07_B0;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_6_D": {
+          "hide_name": 0,
+          "bits": [ 3878346 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F0;;1;R17C10_S20;R17C10_F0_S200;1;R18C10_X01;R18C10_S201_X01;1;R18C10_A0;R18C10_X01_A0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_6_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878344 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[18]": {
+          "hide_name": 0,
+          "bits": [ 3878342 ] ,
+          "attributes": {
+            "ROUTING": "R18C10_W13;R18C10_Q4_W130;1;R18C10_B7;R18C10_W130_B7;1;R18C10_Q4;;1;R18C10_N24;R18C10_Q4_N240;1;R17C10_X05;R17C10_N241_X05;1;R17C10_B1;R17C10_X05_B1;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_5_D": {
+          "hide_name": 0,
+          "bits": [ 3878341 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F1;;1;R17C10_S10;R17C10_F1_S100;1;R18C10_A4;R18C10_S101_A4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_5_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878339 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[19]": {
+          "hide_name": 0,
+          "bits": [ 3878337 ] ,
+          "attributes": {
+            "ROUTING": "R18C10_E13;R18C10_Q2_E130;1;R18C10_A7;R18C10_E130_A7;1;R18C10_Q2;;1;R18C10_N13;R18C10_Q2_N130;1;R17C10_B2;R17C10_N131_B2;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_4_D": {
+          "hide_name": 0,
+          "bits": [ 3878336 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F2;;1;R17C10_S22;R17C10_F2_S220;1;R18C10_X07;R18C10_S221_X07;1;R18C10_A2;R18C10_X07_A2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_4_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878334 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[20]": {
+          "hide_name": 0,
+          "bits": [ 3878332 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_X02;R17C10_N211_X02;1;R17C10_D7;R17C10_X02_D7;1;R18C10_Q1;;1;R18C10_N21;R18C10_Q1_N210;1;R17C10_B3;R17C10_N211_B3;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_3_D": {
+          "hide_name": 0,
+          "bits": [ 3878331 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F3;;1;R17C10_S13;R17C10_F3_S130;1;R18C10_A1;R18C10_S131_A1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_3_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878329 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "ledCounter_DFFE_Q_CE_LUT4_F_I0_MUX2_LUT5_O_1_S0[4]": {
+          "hide_name": 0,
+          "bits": [ 3878412 ] ,
+          "attributes": {
+            "ROUTING": "R16C7_F5;;1;R16C7_EW10;R16C7_F5_EW10;1;R16C8_S25;R16C8_E111_S250;1;R17C8_X06;R17C8_S251_X06;1;R17C8_SEL6;R17C8_X06_SEL6;1",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21",
+            "force_downto": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN_ALU_COUT_SUM": {
+          "hide_name": 0,
+          "bits": [ 3878324 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 "
+          }
+        },
+        "clockCounter[0]": {
+          "hide_name": 0,
+          "bits": [ 3878323 ] ,
+          "attributes": {
+            "ROUTING": "R17C7_S24;R17C7_S101_S240;1;R17C7_B1;R17C7_S240_B1;1;R16C7_S10;R16C7_Q1_S100;1;R16C7_D5;R16C7_S100_D5;1;R16C7_Q1;;1;R16C7_N10;R16C7_Q1_N100;1;R16C7_A1;R16C7_N100_A1;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 3878321 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[1]": {
+          "hide_name": 0,
+          "bits": [ 3878319 ] ,
+          "attributes": {
+            "ROUTING": "R16C7_X05;R16C7_Q0_X05;1;R16C7_C5;R16C7_X05_C5;1;R16C7_Q0;;1;R16C7_S20;R16C7_Q0_S200;1;R17C7_X01;R17C7_S201_X01;1;R17C7_B2;R17C7_X01_B2;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D": {
+          "hide_name": 0,
+          "bits": [ 3878318 ] ,
+          "attributes": {
+            "ROUTING": "R17C7_F2;;1;R17C7_N22;R17C7_F2_N220;1;R16C7_X01;R16C7_N221_X01;1;R16C7_A0;R16C7_X01_A0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_22_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878316 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[2]": {
+          "hide_name": 0,
+          "bits": [ 3878314 ] ,
+          "attributes": {
+            "ROUTING": "R16C7_W10;R16C7_Q2_W100;1;R16C7_B5;R16C7_W100_B5;1;R16C7_Q2;;1;R16C7_SN10;R16C7_Q2_SN10;1;R17C7_B3;R17C7_S111_B3;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_21_D": {
+          "hide_name": 0,
+          "bits": [ 3878313 ] ,
+          "attributes": {
+            "ROUTING": "R17C7_F3;;1;R17C7_N23;R17C7_F3_N230;1;R16C7_X02;R16C7_N231_X02;1;R16C7_A2;R16C7_X02_A2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_21_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878311 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[3]": {
+          "hide_name": 0,
+          "bits": [ 3878309 ] ,
+          "attributes": {
+            "ROUTING": "R16C7_X06;R16C7_Q3_X06;1;R16C7_A5;R16C7_X06_A5;1;R16C7_Q3;;1;R16C7_SN20;R16C7_Q3_SN20;1;R17C7_B4;R17C7_S121_B4;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_20_D": {
+          "hide_name": 0,
+          "bits": [ 3878308 ] ,
+          "attributes": {
+            "ROUTING": "R17C7_F4;;1;R17C7_SN10;R17C7_F4_SN10;1;R16C7_A3;R16C7_N111_A3;1"
+          }
+        },
+        "clockCounter[21]": {
+          "hide_name": 0,
+          "bits": [ 3878306 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_C7;R17C10_S221_C7;1;R16C10_Q2;;1;R16C10_S22;R16C10_Q2_S220;1;R17C10_X01;R17C10_S221_X01;1;R17C10_B4;R17C10_X01_B4;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_2_D": {
+          "hide_name": 0,
+          "bits": [ 3878305 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F4;;1;R17C10_SN10;R17C10_F4_SN10;1;R16C10_A2;R16C10_N111_A2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_D_ALU_SUM_CIN": {
+          "hide_name": 0,
+          "bits": [ 3878303 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_2_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878302 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_20_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878300 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[4]": {
+          "hide_name": 0,
+          "bits": [ 3878298 ] ,
+          "attributes": {
+            "ROUTING": "R17C7_E23;R17C7_E131_E230;1;R17C8_X02;R17C8_E231_X02;1;R17C8_D7;R17C8_X02_D7;1;R17C6_Q1;;1;R17C6_E13;R17C6_Q1_E130;1;R17C7_B5;R17C7_E131_B5;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_19_D": {
+          "hide_name": 0,
+          "bits": [ 3878296 ] ,
+          "attributes": {
+            "ROUTING": "R17C7_F5;;1;R17C7_W13;R17C7_F5_W130;1;R17C6_A1;R17C6_W131_A1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_19_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878294 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[5]": {
+          "hide_name": 0,
+          "bits": [ 3878292 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_C7;R17C8_X05_C7;1;R18C8_Q4;;1;R18C8_N24;R18C8_Q4_N240;1;R17C8_X05;R17C8_N241_X05;1;R17C8_B0;R17C8_X05_B0;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_18_D": {
+          "hide_name": 0,
+          "bits": [ 3878290 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F0;;1;R17C8_S10;R17C8_F0_S100;1;R18C8_A4;R18C8_S101_A4;1"
+          }
+        },
+        "clockCounter_DFFR_Q_18_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878288 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[6]": {
+          "hide_name": 0,
+          "bits": [ 3878286 ] ,
+          "attributes": {
+            "ROUTING": "R16C8_S10;R16C8_Q5_S100;1;R17C8_E24;R17C8_S101_E240;1;R17C8_B7;R17C8_E240_B7;1;R16C8_Q5;;1;R16C8_SN10;R16C8_Q5_SN10;1;R17C8_B1;R17C8_S111_B1;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_17_D": {
+          "hide_name": 0,
+          "bits": [ 3878284 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F1;;1;R17C8_SN20;R17C8_F1_SN20;1;R16C8_A5;R16C8_N121_A5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_17_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878282 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[7]": {
+          "hide_name": 0,
+          "bits": [ 3878280 ] ,
+          "attributes": {
+            "ROUTING": "R18C8_SN20;R18C8_Q2_SN20;1;R17C8_A7;R17C8_N121_A7;1;R18C8_Q2;;1;R18C8_N13;R18C8_Q2_N130;1;R17C8_B2;R17C8_N131_B2;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_16_D": {
+          "hide_name": 0,
+          "bits": [ 3878278 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F2;;1;R17C8_S13;R17C8_F2_S130;1;R18C8_A2;R18C8_S131_A2;1"
+          }
+        },
+        "clockCounter_DFFR_Q_16_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878276 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[8]": {
+          "hide_name": 0,
+          "bits": [ 3878274 ] ,
+          "attributes": {
+            "ROUTING": "R16C8_S13;R16C8_Q0_S130;1;R16C8_D7;R16C8_S130_D7;1;R16C8_Q0;;1;R16C8_S20;R16C8_Q0_S200;1;R17C8_X01;R17C8_S201_X01;1;R17C8_B3;R17C8_X01_B3;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_15_D": {
+          "hide_name": 0,
+          "bits": [ 3878273 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F3;;1;R17C8_SN10;R17C8_F3_SN10;1;R16C8_A0;R16C8_N111_A0;1"
+          }
+        },
+        "clockCounter_DFFR_Q_15_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878271 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[9]": {
+          "hide_name": 0,
+          "bits": [ 3878269 ] ,
+          "attributes": {
+            "ROUTING": "R16C8_X06;R16C8_Q1_X06;1;R16C8_C7;R16C8_X06_C7;1;R16C8_Q1;;1;R16C8_SN20;R16C8_Q1_SN20;1;R17C8_B4;R17C8_S121_B4;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_14_D": {
+          "hide_name": 0,
+          "bits": [ 3878268 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F4;;1;R17C8_N24;R17C8_F4_N240;1;R16C8_X03;R16C8_N241_X03;1;R16C8_A1;R16C8_X03_A1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_14_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878266 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[10]": {
+          "hide_name": 0,
+          "bits": [ 3878264 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_N20;R17C8_N101_N200;1;R16C8_X07;R16C8_N201_X07;1;R16C8_B7;R16C8_X07_B7;1;R18C8_Q1;;1;R18C8_N10;R18C8_Q1_N100;1;R17C8_B5;R17C8_N101_B5;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_13_D": {
+          "hide_name": 0,
+          "bits": [ 3878263 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_F5;;1;R17C8_S25;R17C8_F5_S250;1;R18C8_A1;R18C8_S251_A1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_13_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878261 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[11]": {
+          "hide_name": 0,
+          "bits": [ 3878259 ] ,
+          "attributes": {
+            "ROUTING": "R16C9_W13;R16C9_Q5_W130;1;R16C8_A7;R16C8_W131_A7;1;R16C9_Q5;;1;R16C9_SN10;R16C9_Q5_SN10;1;R17C9_B0;R17C9_S111_B0;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_12_D": {
+          "hide_name": 0,
+          "bits": [ 3878258 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F0;;1;R17C9_SN20;R17C9_F0_SN20;1;R16C9_A5;R16C9_N121_A5;1"
+          }
+        },
+        "clockCounter_DFFR_Q_12_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878256 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[12]": {
+          "hide_name": 0,
+          "bits": [ 3878254 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_D7;R17C9_X04_D7;1;R18C9_Q5;;1;R18C9_N25;R18C9_Q5_N250;1;R17C9_X04;R17C9_N251_X04;1;R17C9_B1;R17C9_X04_B1;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_11_D": {
+          "hide_name": 0,
+          "bits": [ 3878252 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F1;;1;R17C9_S10;R17C9_F1_S100;1;R18C9_A5;R18C9_S101_A5;1"
+          }
+        },
+        "$PACKER_VCC_NET": {
+          "hide_name": 1,
+          "bits": [ 3878451 ] ,
+          "attributes": {
+            "ROUTING": "R22C2_D1;R22C2_X08_D1;1;R17C8_C1;R17C8_X04_C1;1;R17C10_C3;R17C10_X04_C3;1;R22C2_C2;R22C2_X04_C2;1;R22C2_A1;R22C2_X03_A1;1;R17C9_C5;R17C9_X08_C5;1;R17C10_D1;R17C10_X03_D1;1;R17C9_C2;R17C9_W220_C2;1;R17C10_D2;R17C10_X03_D2;1;R17C10_D5;R17C10_X04_D5;1;R17C7_C2;R17C7_X04_C2;1;R17C7_X03;R17C7_VCC_X03;1;R17C7_A1;R17C7_X03_A1;1;R17C7_D5;R17C7_X04_D5;1;R17C7_D3;R17C7_X08_D3;1;R17C9_D4;R17C9_X07_D4;1;R17C8_C5;R17C8_X08_C5;1;R17C8_D2;R17C8_X08_D2;1;R17C8_C3;R17C8_X04_C3;1;R17C9_D1;R17C9_X08_D1;1;R17C7_C0;R17C7_X04_C0;1;R17C7_C5;R17C7_X08_C5;1;R17C11_X08;R17C11_VCC_X08;1;R17C11_D0;R17C11_X08_D0;1;R22C2_C5;R22C2_X08_C5;1;R17C7_C3;R17C7_X04_C3;1;R17C10_C4;R17C10_W241_C4;1;R17C8_D0;R17C8_X08_D0;1;R17C8_C4;R17C8_X08_C4;1;R17C11_W24;R17C11_VCC_W240;1;R17C10_C5;R17C10_W241_C5;1;R17C10_D3;R17C10_X03_D3;1;R17C10_D4;R17C10_X04_D4;1;R22C2_C0;R22C2_X04_C0;1;R17C8_E26;R17C8_VCC_E260;1;R17C9_C0;R17C9_E261_C0;1;R17C10_X03;R17C10_VCC_X03;1;R17C10_D0;R17C10_X03_D0;1;R17C9_D5;R17C9_X07_D5;1;R17C9_C4;R17C9_X08_C4;1;R17C9_D3;R17C9_X08_D3;1;R22C2_D2;R22C2_X08_D2;1;R17C7_D4;R17C7_X04_D4;1;R17C7_C4;R17C7_X08_C4;1;R17C10_C0;R17C10_X04_C0;1;R17C10_C1;R17C10_X04_C1;1;R17C8_D4;R17C8_X07_D4;1;R22C2_X08;R22C2_VCC_X08;1;R22C2_C4;R22C2_X08_C4;1;R17C11_X04;R17C11_VCC_X04;1;R17C11_C0;R17C11_X04_C0;1;R22C2_C3;R22C2_X04_C3;1;R22C2_X03;R22C2_VCC_X03;1;R22C2_D3;R22C2_X03_D3;1;R17C9_X07;R17C9_VCC_X07;1;R22C3_X03;R22C3_VCC_X03;1;R22C3_D0;R22C3_X03_D0;1;R22C2_D4;R22C2_X07_D4;1;R17C8_D1;R17C8_X08_D1;1;R17C8_C0;R17C8_X04_C0;1;R17C9_D2;R17C9_X08_D2;1;R17C7_X04;R17C7_VCC_X04;1;R17C7_C1;R17C7_X04_C1;1;R17C9_X08;R17C9_VCC_X08;1;R17C9_D0;R17C9_X08_D0;1;R17C7_X08;R17C7_VCC_X08;1;R17C7_D1;R17C7_X08_D1;1;R22C3_N22;R22C3_VCC_N220;1;R22C3_C0;R22C3_N220_C0;1;R22C2_X04;R22C2_VCC_X04;1;R22C2_C1;R22C2_X04_C1;1;R22C2_X07;R22C2_VCC_X07;1;R22C2_D5;R22C2_X07_D5;1;R17C7_D2;R17C7_X08_D2;1;R17C9_C1;R17C9_E261_C1;1;R17C10_X04;R17C10_VCC_X04;1;R17C10_C2;R17C10_X04_C2;1;R17C9_W22;R17C9_VCC_W220;1;R17C9_C3;R17C9_W220_C3;1;R17C8_X08;R17C8_VCC_X08;1;R17C8_D3;R17C8_X08_D3;1;R17C8_X04;R17C8_VCC_X04;1;R17C8_C2;R17C8_X04_C2;1;VCC;;1;R17C8_X07;R17C8_VCC_X07;1;R17C8_D5;R17C8_X07_D5;1"
+          }
+        },
+        "$PACKER_GND_NET": {
+          "hide_name": 1,
+          "bits": [ 3878449 ] ,
+          "attributes": {
+            "ROUTING": "R17C8_A2;R17C8_N210_A2;1;R17C10_A1;R17C10_E210_A1;1;R17C7_A4;R17C7_W210_A4;1;R17C9_A2;R17C9_N210_A2;1;R17C9_A4;R17C9_W210_A4;1;R22C3_E21;R22C3_VSS_E210;1;R22C3_A0;R22C3_E210_A0;1;R22C2_A3;R22C2_N210_A3;1;R17C9_A1;R17C9_E210_A1;1;R17C9_E21;R17C9_VSS_E210;1;R17C9_A0;R17C9_E210_A0;1;R17C11_E21;R17C11_VSS_E210;1;R17C11_A0;R17C11_E210_A0;1;R17C10_E21;R17C10_VSS_E210;1;R17C10_A0;R17C10_E210_A0;1;R15C1_W26;R15C1_VSS_W260;1;R15C1_C6;R15C1_E261_C6;1;R15C1_N27;R15C1_VSS_N270;1;R15C1_D6;R15C1_N270_D6;1;R22C2_N21;R22C2_VSS_N210;1;R22C2_A2;R22C2_N210_A2;1;R17C7_A2;R17C7_N210_A2;1;R22C2_A4;R22C2_W210_A4;1;R17C10_A2;R17C10_N210_A2;1;R17C7_W21;R17C7_VSS_W210;1;R17C7_A5;R17C7_W210_A5;1;R17C10_N21;R17C10_VSS_N210;1;R17C10_A3;R17C10_N210_A3;1;R17C7_N21;R17C7_VSS_N210;1;R17C7_A3;R17C7_N210_A3;1;R17C8_N21;R17C8_VSS_N210;1;R17C8_A3;R17C8_N210_A3;1;R17C10_A5;R17C10_W210_A5;1;R17C8_A0;R17C8_E210_A0;1;R17C8_A5;R17C8_W210_A5;1;R17C9_N21;R17C9_VSS_N210;1;R17C9_A3;R17C9_N210_A3;1;R17C10_W21;R17C10_VSS_W210;1;R17C10_A4;R17C10_W210_A4;1;R22C2_W21;R22C2_VSS_W210;1;R22C2_A5;R22C2_W210_A5;1;R17C8_W21;R17C8_VSS_W210;1;R17C8_A4;R17C8_W210_A4;1;R17C9_W21;R17C9_VSS_W210;1;R17C9_A5;R17C9_W210_A5;1;VSS;;1;R17C8_E21;R17C8_VSS_E210;1;R17C8_A1;R17C8_E210_A1;1"
+          }
+        },
+        "clockCounter_DFFR_Q_10_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878248 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter_DFFR_Q_11_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878247 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:14.21-14.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        },
+        "clockCounter[13]": {
+          "hide_name": 0,
+          "bits": [ 3878245 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_C7;R17C9_S221_C7;1;R16C9_Q2;;1;R16C9_S22;R16C9_Q2_S220;1;R17C9_X01;R17C9_S221_X01;1;R17C9_B2;R17C9_X01_B2;1",
+            "force_downto": "00000000000000000000000000000001",
+            "src": "C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_map.v:130.20-130.21"
+          }
+        },
+        "clockCounter_DFFR_Q_10_D": {
+          "hide_name": 0,
+          "bits": [ 3878243 ] ,
+          "attributes": {
+            "ROUTING": "R17C9_F2;;1;R17C9_N22;R17C9_F2_N220;1;R16C9_X07;R16C9_N221_X07;1;R16C9_A2;R16C9_X07_A2;1"
+          }
+        },
+        "clockCounter[22]": {
+          "hide_name": 0,
+          "bits": [ 3878241 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_B7;R17C10_S121_B7;1;R16C10_Q4;;1;R16C10_SN20;R16C10_Q4_SN20;1;R17C10_B5;R17C10_S121_B5;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_1_D": {
+          "hide_name": 0,
+          "bits": [ 3878240 ] ,
+          "attributes": {
+            "ROUTING": "R17C10_F5;;1;R17C10_SN20;R17C10_F5_SN20;1;R16C10_A4;R16C10_N121_A4;1"
+          }
+        },
+        "ledCounter_DFFE_Q_CE": {
+          "hide_name": 0,
+          "bits": [ 3878237 ] ,
+          "attributes": {
+            "ROUTING": "R18C10_LSR1;R18C10_S271_LSR1;1;R18C8_LSR1;R18C8_X08_LSR1;1;R21C2_CE2;R21C2_X05_CE2;1;R17C10_S27;R17C10_W130_S270;1;R18C10_LSR0;R18C10_S271_LSR0;1;R18C7_W22;R18C7_W272_W220;1;R18C5_W23;R18C5_W222_W230;1;R18C3_W26;R18C3_W232_W260;1;R18C2_X07;R18C2_W261_X07;1;R18C2_CE1;R18C2_X07_CE1;1;R21C2_CE1;R21C2_X05_CE1;1;R17C9_W27;R17C9_W131_W270;1;R17C7_W22;R17C7_W272_W220;1;R17C6_X05;R17C6_W221_X05;1;R17C6_LSR0;R17C6_X05_LSR0;1;R18C9_W27;R18C9_S271_W270;1;R18C8_X08;R18C8_W271_X08;1;R18C8_LSR2;R18C8_X08_LSR2;1;R17C10_E26;R17C10_F6_E260;1;R17C11_X07;R17C11_E261_X07;1;R17C11_LSR1;R17C11_X07_LSR1;1;R16C10_LSR2;R16C10_X05_LSR2;1;R21C3_W22;R21C3_W222_W220;1;R21C2_X05;R21C2_W221_X05;1;R21C2_CE0;R21C2_X05_CE0;1;R17C10_N26;R17C10_F6_N260;1;R16C10_X05;R16C10_N261_X05;1;R16C10_LSR1;R16C10_X05_LSR1;1;R16C9_LSR2;R16C9_N271_LSR2;1;R16C8_LSR0;R16C8_X08_LSR0;1;R18C9_LSR0;R18C9_S271_LSR0;1;R16C8_X08;R16C8_W271_X08;1;R16C8_LSR2;R16C8_X08_LSR2;1;R16C9_W27;R16C9_N271_W270;1;R16C7_X08;R16C7_W272_X08;1;R16C7_LSR1;R16C7_X08_LSR1;1;R16C9_LSR0;R16C9_N271_LSR0;1;R16C7_LSR0;R16C7_N271_LSR0;1;R18C9_LSR1;R18C9_S271_LSR1;1;R19C9_S27;R19C9_S272_S270;1;R21C9_W27;R21C9_S272_W270;1;R21C7_W27;R21C7_W272_W270;1;R21C5_W22;R21C5_W272_W220;1;R21C3_S22;R21C3_W222_S220;1;R22C3_X07;R22C3_S221_X07;1;R22C3_CE2;R22C3_X07_CE2;1;R18C10_LSR2;R18C10_S271_LSR2;1;R18C8_LSR0;R18C8_X08_LSR0;1;R17C7_N27;R17C7_W272_N270;1;R17C9_N27;R17C9_W131_N270;1;R16C9_LSR1;R16C9_N271_LSR1;1;R17C10_F6;;1;R17C10_W13;R17C10_F6_W130;1;R17C9_S27;R17C9_W131_S270;1;R18C9_LSR2;R18C9_S271_LSR2;1"
+          }
+        },
+        "clockCounter[23]": {
+          "hide_name": 0,
+          "bits": [ 3878236 ] ,
+          "attributes": {
+            "ROUTING": "R17C11_W13;R17C11_Q3_W130;1;R17C10_A7;R17C10_W131_A7;1;R17C11_Q3;;1;R17C11_S10;R17C11_Q3_S100;1;R17C11_B0;R17C11_S100_B0;1",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:11.12-11.24"
+          }
+        },
+        "clockCounter_DFFR_Q_D": {
+          "hide_name": 0,
+          "bits": [ 3878235 ] ,
+          "attributes": {
+            "ROUTING": "R17C11_F0;;1;R17C11_X05;R17C11_F0_X05;1;R17C11_A3;R17C11_X05_A3;1"
+          }
+        },
+        "clk_IBUF_I_O": {
+          "hide_name": 0,
+          "bits": [ 3878232 ] ,
+          "attributes": {
+            "ROUTING": "R17C47_F6;;5;R17C11_CLK1;R17C11_GB00_CLK1;5;R17C12_GBO0;R17C12_GT00_GBO0;5;R20C12_GT00;R20C12_SPINE16_GT00;5;R10C28_SPINE16;R10C28_PCLKR1_SPINE16;5;R16C10_CLK2;R16C10_GB00_CLK2;5;R16C8_GBO0;R16C8_GT00_GBO0;5;R20C8_GT00;R20C8_SPINE16_GT00;5;R16C9_CLK1;R16C9_GB00_CLK1;5;R18C9_CLK2;R18C9_GB00_CLK2;5;R18C8_GBO0;R18C8_GT00_GBO0;5;R16C9_CLK2;R16C9_GB00_CLK2;5;R18C8_CLK0;R18C8_GB00_CLK0;5;R16C8_CLK0;R16C8_GB00_CLK0;5;R18C8_CLK1;R18C8_GB00_CLK1;5;R16C8_CLK2;R16C8_GB00_CLK2;5;R18C8_CLK2;R18C8_GB00_CLK2;5;R17C6_CLK0;R17C6_GB00_CLK0;5;R17C4_GBO0;R17C4_GT00_GBO0;5;R20C4_GT00;R20C4_SPINE16_GT00;5;R16C10_CLK1;R16C10_GB00_CLK1;5;R16C7_CLK1;R16C7_GB00_CLK1;5;R16C7_CLK0;R16C7_GB00_CLK0;5;R18C10_CLK0;R18C10_GB00_CLK0;5;R18C10_CLK1;R18C10_GB00_CLK1;5;R18C10_CLK2;R18C10_GB00_CLK2;5;R18C9_CLK0;R18C9_GB00_CLK0;5;R16C9_CLK0;R16C9_GB00_CLK0;5;R18C9_CLK1;R18C9_GB00_CLK1;5;R22C3_CLK2;R22C3_GB00_CLK2;5;R22C4_GBO0;R22C4_GT00_GBO0;5;R21C2_CLK2;R21C2_GB00_CLK2;5;R21C4_GBO0;R21C4_GT00_GBO0;5;R21C2_CLK0;R21C2_GB00_CLK0;5;R21C2_CLK1;R21C2_GB00_CLK1;5;R18C2_CLK1;R18C2_GB00_CLK1;5;R18C4_GBO0;R18C4_GT00_GBO0;5"
+          }
+        },
+        "ledCounter_DFFE_Q_D_ALU_SUM_COUT": {
+          "hide_name": 0,
+          "bits": [ 3878420 ] ,
+          "attributes": {
+            "ROUTING": " ",
+            "unused_bits": "0 ",
+            "src": "c:\\Workspace\\NES\\NESTang\\LushayLabs\\001Setup\\counter.v:17.23-17.37|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/arith_map.v:57.7-63.5|C:\\OSS-CA~1\\bin\\../share/yosys/gowin/cells_sim.v:882.25-882.29",
+            "abc9_carry": "00000000000000000000000000000001"
+          }
+        }
+      }
+    }
+  }
+}
