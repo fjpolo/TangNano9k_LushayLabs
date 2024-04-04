@@ -1,5 +1,11 @@
 *~
 *#
+*.o
+*.user
+*.html
+*.rpt
+impl/
+
 
 tangnano9k-series-examples/
 node_modules/
