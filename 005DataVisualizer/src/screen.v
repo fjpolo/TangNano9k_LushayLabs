@@ -1,3 +1,5 @@
+// `default_nettype none
+
 module screen
 #(
   parameter STARTUP_WAIT = 32'd10000000
