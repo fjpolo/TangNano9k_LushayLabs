@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const bitmaps = fs.readFileSync('../fonts/monogram/bitmap/monogram-bitmap.json');
+const bitmaps = fs.readFileSync('../fonts/monogram.json');
 const json = JSON.parse(bitmaps.toString());
 
 const memory = [];
