@@ -21,6 +21,9 @@ always @(posedge clk) begin
     end
 end
 
+//
+// FORMAL VERIFICATION
+//
 `ifdef FORMAL
 
     // f_past_valid
