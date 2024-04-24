@@ -125,6 +125,17 @@ end
     always@(posedge clk_i)
         `ASSUME(uart_rx_i == $past(uart_rx_i));
 
+    // Prove that after a reset, registers get initialized
+    always @(posedge clk_i) begin
+        if(($past(f_past_valid))&&($past(reset_i))) begin
+            assert(rxState == RX_STATE_IDLE);
+            assert(rxCounter == 0);
+            assert(rxBitNumber == 0);
+            assert(byteReady == 0);
+            assert(dataIn == 6'b11_1111);
+        end
+    end
+
     //
     // Contract
     //
@@ -156,6 +167,6 @@ end
         end
 
 
-`endif
+`endif // FORMAL
 
 endmodule   
