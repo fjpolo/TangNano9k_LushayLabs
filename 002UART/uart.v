@@ -1,10 +1,10 @@
-// https://learn.lushaylabs.com/tang-nano-9k-debugging/
-
+`ifdef FORMAL
 `default_nettype none
+`endif
 
 module uart
 #(
-    parameter DELAY_FRAMES = 234 // 27,000,000 (27Mhz) / 115200 Baud rate
+    parameter DELAY_FRAMES = 234 // 27,000,000 (27Mhz) / 115_200 Baud rate
 )
 (
     input clk_i,

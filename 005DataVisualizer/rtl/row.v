@@ -1,7 +1,8 @@
-// `default_nettype none
-
+`ifdef FORMAL
+`default_nettype none
+`endif
 module uartTextRow (
-    input clk,
+    input clk_i,
     input byteReady,
     input [7:0] data,
     input [3:0] outputCharIndex,
@@ -16,7 +17,7 @@ module uartTextRow (
     localparam WAIT_FOR_TRANSFER_FINISH = 1;
     localparam SAVING_CHARACTER_STATE = 2;
 
-    always @(posedge clk) begin
+    always @(posedge clk_i) begin
         case (state)
             WAIT_FOR_NEXT_CHAR_STATE: begin
                 if (byteReady == 0)
@@ -44,7 +45,7 @@ module uartTextRow (
 endmodule
 
 module binaryRow(
-    input clk,
+    input clk_i,
     input [7:0] value,
     input [3:0] outputCharIndex,
     output [7:0] outByte
@@ -54,7 +55,7 @@ module binaryRow(
 
     assign bitNumber = outputCharIndex - 5;
 
-    always @(posedge clk) begin
+    always @(posedge clk_i) begin
         case (outputCharIndex)
             0: outByteReg <= "B";
             1: outByteReg <= "i";
@@ -70,17 +71,17 @@ module binaryRow(
 endmodule
 
 module toHex(
-    input clk,
+    input clk_i,
     input [3:0] value,
     output reg [7:0] hexChar = "0"
 );
-    always @(posedge clk) begin
+    always @(posedge clk_i) begin
         hexChar <= (value <= 9) ? 8'd48 + value : 8'd55 + value;
     end
 endmodule
 
 module toDec(
-    input clk,
+    input clk_i,
     input [7:0] value,
     output reg [7:0] hundreds = "0",
     output reg [7:0] tens = "0",
@@ -96,7 +97,7 @@ module toDec(
     localparam SHIFT_STATE = 2;
     localparam DONE_STATE = 3;
 
-    always @(posedge clk) begin
+    always @(posedge clk_i) begin
         case (state)
             START_STATE: begin
                 cachedValue <= value;
@@ -130,27 +131,27 @@ endmodule
 
 
 module hexDecRow(
-    input clk,
-    input [7:0] value,
-    input [3:0] outputCharIndex,
-    output [7:0] outByte
+    input clk_i,
+    input [7:0] value_i,
+    input [3:0] outputCharIndex_i,
+    output [7:0] outByte_i
 );
     reg [7:0] outByteReg;
 
     wire [3:0] hexLower, hexHigher;
     wire [7:0] lowerHexChar, higherHexChar;
 
-    assign hexLower = value[3:0];
-    assign hexHigher = value[7:4];
+    assign hexLower = value_i[3:0];
+    assign hexHigher = value_i[7:4];
 
-    toHex h1(clk, hexLower, lowerHexChar);
-    toHex h2(clk, hexHigher, higherHexChar);
+    toHex h1(clk_i, hexLower, lowerHexChar);
+    toHex h2(clk_i, hexHigher, higherHexChar);
 
     wire [7:0] decChar1, decChar2, decChar3;
-    toDec dec(clk, value, decChar1, decChar2, decChar3);
+    toDec dec(clk_i, value_i, decChar1, decChar2, decChar3);
     
-    always @(posedge clk) begin
-        case (outputCharIndex)
+    always @(posedge clk_i) begin
+        case (outputCharIndex_i)
             0: outByteReg <= "H";
             1: outByteReg <= "e";
             2: outByteReg <= "x";
@@ -168,70 +169,183 @@ module hexDecRow(
         endcase
     end
 
-    assign outByte = outByteReg;
+    assign outByte_i = outByteReg;
+
+    //
+    // FORMAL VERIFICATION
+    //
+    `ifdef FORMAL
+
+        `ifdef PROGRESS_ROW
+            `define	ASSUME	assume
+        `else
+            `define	ASSUME	assert
+        `endif
+
+        // f_past_valid
+        reg	f_past_valid;
+        initial	f_past_valid = 1'b0;
+        always @(posedge clk_i)
+            f_past_valid <= 1'b1;
+
+        // Prove that outByte_i is assigned correctly
+        always @(*)
+            if(f_past_valid)
+                assert(outByte_i == outByteReg);
+
+        //
+        // Contract
+        //
+
+    `endif // FORMAL
 endmodule
 
 module progressRow(
-    input clk,
-    input [7:0] value,
-    input [9:0] pixelAddress,
-    output [7:0] outByte
+    input clk_i,
+    input reset_i,
+    input [7:0] value_i,
+    input [9:0] pixelAddress_i,
+    output [7:0] outByte_o
 );
     reg [7:0] outByteReg;
     reg [7:0] bar, border;
     wire topRow;
     wire [6:0] column;
 
-    assign topRow = !pixelAddress[7];
-    assign column  = pixelAddress[6:0];
+    assign topRow = !pixelAddress_i[7];
+    assign column  = pixelAddress_i[6:0];
 
-    always @(posedge clk) begin
+    always @(posedge clk_i) begin
         if (topRow) begin
             case (column)
                 0, 127: begin
-                    bar = 8'b11000000;
-                    border = 8'b11000000;
+                    bar = 8'b1100_0000;
+                    border = 8'b1100_0000;
                 end
                 1, 126: begin
-                    bar = 8'b11100000;
-                    border = 8'b01100000;
+                    bar = 8'b1110_0000;
+                    border = 8'b0110_0000;
                 end
                 2, 125: begin
-                    bar = 8'b11100000;
-                    border = 8'b00110000;
+                    bar = 8'b1110_0000;
+                    border = 8'b0011_0000;
                 end
                 default: begin
-                    bar = 8'b11110000;
-                    border = 8'b00010000;
+                    bar = 8'b1111_0000;
+                    border = 8'b0001_0000;
                 end
             endcase
-        end
-        else begin
+        end else begin
             case (column)
                 0, 127: begin
-                    bar = 8'b00000011;
-                    border = 8'b00000011;
+                    bar = 8'b0000_0011;
+                    border = 8'b0000_0011;
                 end
                 1, 126: begin
-                    bar = 8'b00000111;
-                    border = 8'b00000110;
+                    bar = 8'b0000_0111;
+                    border = 8'b0000_0110;
                 end
                 2, 125: begin
-                    bar = 8'b00000111;
-                    border = 8'b00001100;
+                    bar = 8'b0000_0111;
+                    border = 8'b0000_1100;
                 end
                 default: begin
-                    bar = 8'b00001111;
-                    border = 8'b00001000;
+                    bar = 8'b0000_1111;
+                    border = 8'b0000_1000;
                 end
             endcase
         end
 
-        if (column > value[7:1])
+        if (column > value_i[7:1])
             outByteReg <= border;
         else
             outByteReg <= bar;
     end
 
-    assign outByte = outByteReg;
+    assign outByte_o = outByteReg;
+
+    //
+    // FORMAL VERIFICATION
+    //
+    `ifdef FORMAL
+
+        `ifdef PROGRESS_ROW
+            `define	ASSUME	assume
+        `else
+            `define	ASSUME	assert
+        `endif
+
+        // f_past_valid
+        reg	f_past_valid;
+        initial	f_past_valid = 1'b0;
+        always @(posedge clk_i)
+            f_past_valid <= 1'b1;
+
+        // Prove that topRow gets assigned correctly
+        always @(*)
+            if(f_past_valid)
+                assert(topRow == !pixelAddress_i[7]);
+
+        // Prove that column gets assigned correctly
+        always @(*)
+            if(f_past_valid)
+                assert(column  == pixelAddress_i[6:0]);
+
+        // Prove that outByte_o gets assigned correctly
+        always @(*)
+            if(f_past_valid)
+                assert(outByte_o == outByteReg);
+
+
+
+        //
+        // Contract
+        //
+        always @(posedge clk_i) begin
+            if((f_past_valid)&&($past(f_past_valid))&&(!reset_i)) begin
+                `ASSUME(pixelAddress_i == $past(pixelAddress_i));
+                if (topRow) begin
+                    case (column)
+                        0, 127: begin
+                            assert(bar == 8'b1100_0000);
+                            assert(border == 8'b1100_0000);
+                        end
+                        1, 126: begin
+                            assert(bar == 8'b1110_0000);
+                            assert(border == 8'b0110_0000);  
+                        end
+                        2, 125: begin
+                            assert(bar == 8'b1110_0000);
+                            assert(border == 8'b0011_0000); 
+                        end
+                        default: begin
+                            assert(bar == 8'b1111_0000);
+                            assert(border == 8'b0001_0000); 
+                        end
+                    endcase
+                end else begin
+                    case (column)
+                        0, 127: begin
+                            assert(bar == 8'b0000_0011);
+                            assert(border == 8'b0000_0011);
+                        end
+                        1, 126: begin
+                            assert(bar == 8'b0000_0111);
+                            assert(border == 8'b0000_0110);  
+                        end
+                        2, 125: begin
+                            assert(bar == 8'b0000_0111);
+                            assert(border == 8'b0000_1100); 
+                        end
+                        default: begin
+                            assert(bar == 8'b0000_1111);
+                            assert(border == 8'b0000_1000); 
+                        end
+                    endcase
+                end
+            end
+        end
+
+    `endif
+
 endmodule
