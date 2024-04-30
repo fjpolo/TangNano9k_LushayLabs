@@ -11,6 +11,9 @@
         <File path="rtl/top.v" type="file.verilog" enable="1"/>
         <File path="rtl/uart.v" type="file.verilog" enable="1"/>
         <File path="rtl/tangnano9k.cst" type="file.cst" enable="1"/>
+        <File path="src/screen.rao" type="file.gao" enable="1"/>
+        <File path="src/text.rao" type="file.gao" enable="0"/>
+        <File path="src/uart.rao" type="file.gao" enable="0"/>
         <File path="rtl/font.hex" type="file.other" enable="1"/>
     </FileList>
 </Project>
